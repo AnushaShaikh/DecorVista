@@ -1,0 +1,159 @@
+/* Pricing Section Styling */
+.pricing-section {
+    padding: 60px;
+    text-align: center;
+    background-image: url('/public/pricing.jpg') ;
+    background-size: cover;  /* Ensures the image covers the entire section */
+    background-position: center;  /* Centers the background image */
+    background-repeat: no-repeat;  /* Prevents image from repeating */
+    position: relative;  /* Allows us to add an overlay */
+    z-index: 1;
+  }
+
+  .pricing-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: -1; 
+  }
+  
+  .pricing-header h1 {
+    font-size: 36px;
+    color: #dddada;
+  }
+  
+  .pricing-header .highlight {
+    color: #e07aad; /* Rose color */
+  }
+  
+  .pricing-header p {
+    font-size: 16px;
+    color: #dddada;
+    margin-top: 10px;
+  }
+  
+  .pricing-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-card {
+    background-color: white;
+    width: 23%;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .pricing-card.popular {
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: rgb(255, 255, 255);
+    border: 2px solid #fff;
+  }
+
+  .pricing-card .badge {
+    background-color: #a64d79;
+    color: white;
+    padding: 5px 10px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 5px;
+  }
+  
+  .pricing-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: inherit;
+  }
+  
+  .pricing-card h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: inherit;
+  }
+  
+  .pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-card ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: inherit;
+  }
+  
+  .request-btn {
+    padding: 10px 20px;
+    background-color: transparent; /* Transparent background */
+    color:black; 
+    border: 1px solid #fff; /* White border */
+    cursor: pointer;
+    transition: background 0.4s, color 0.4s; /* Smooth transition for background and color */
+    position: relative;
+    overflow: hidden; /* To keep the hover effect within bounds */
+  }
+  
+  .request-btn::before {
+    content: ''; /* Pseudo-element for the hover effect */
+    position: absolute;
+    top: 100%; /* Start below the button */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e07aad; /* White background on hover */
+    transition: top 0.6s; /* Slide-in effect */
+    z-index: 0;
+  }
+  
+  .request-btn:hover::before {
+    top: 0; /* Moves the white background into view */
+  }
+
+  .request-btn:hover {
+    color: white; }
+  
+    .request-btn span {
+    position: relative;
+    z-index: 1; /* Ensure text stays above the hover effect */
+  }
+
+
+
+  /* .request-btn {
+    background-color: ;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  } */
+  
+
+  /* .request-btn:hover {
+    background-color: #912e5f;
+  } */
+  
+  /* Responsive Styling */
+  @media (max-width: 1024px) {
+    .pricing-card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pricing-card {
+      width: 100%;
+    }
+  }
+  

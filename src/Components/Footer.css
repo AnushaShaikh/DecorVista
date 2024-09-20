@@ -1,0 +1,81 @@
+.footer {
+    background-color: #181717; /* Light rose shade */
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-logo h2 {
+    color: #D3819B; /* Darker rose shade for logo */
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    margin: 10px 0;
+  }
+  
+  .footer-phone a {
+    text-decoration: none;
+    color: #D3819B;
+    font-weight: bold;
+  }
+  
+  .footer-social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    color: #D3819B; /* Set the icon color to match the design */
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #333; /* Change color on hover for effect */
+  }
+  
+  .footer-links,
+  .footer-posts {
+    margin-top: 20px;
+  }
+  
+  .footer-links h3,
+  .footer-posts h3 {
+    color: #D3819B;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul,
+  .footer-posts ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li,
+  .footer-posts li {
+    margin: 5px 0;
+  }
+  
+  .footer-links a,
+  .footer-posts a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  

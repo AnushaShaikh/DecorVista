@@ -1,0 +1,98 @@
+/* Main container for the steps section */
+.steps-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background */
+    position: relative;
+  }
+  
+  /* Background image and positioning */
+  .steps-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/path-to-your-background-image.jpg'); /* Add your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1; /* Make the background subtle */
+    z-index: -1;
+  }
+  
+  /* Title and subtitle styling */
+  .steps-title {
+    color: rgb(213, 158, 182);
+    font-size: 36px;
+    font-weight: 700;
+  }
+  
+  .steps-subtitle {
+    color: #686161;
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  
+  /* Container for the steps */
+  .steps-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Individual step box */
+  .step-box {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: transparent; /* Make background transparent */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .step-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(213, 158, 182); /* Circle background color */
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 20px; /* Center the circle */
+  }
+  
+  .step-box h4 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .step-box p {
+    color: #666;
+    font-size: 16px;
+  }
+
+  /* Make step boxes stack on smaller screens */
+@media (max-width: 768px) {
+    .steps-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .step-box {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .step-number {
+      width: 80px;
+      height: 80px;
+      font-size: 40px;
+    }
+  }
+  
